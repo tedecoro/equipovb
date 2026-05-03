@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function TransparencySection() {
   return (
-    <section className="py-20 bg-[#F2F4F7]" id="portal">
+    <section className="py-20 bg-gray-50" id="portal">
       <div className="container px-4">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -38,8 +38,8 @@ export default function TransparencySection() {
                   </div>
                 </div>
               </div>
-              {/* Phone mockup */}
-              <div className="absolute -bottom-6 -right-6 w-32 bg-gray-900 rounded-2xl p-3 shadow-2xl border-4 border-white">
+              {/* Phone mockup - reposicionado en mobile para evitar scroll */}
+              <div className="hidden md:block absolute -bottom-6 -right-6 w-32 bg-gray-900 rounded-2xl p-3 shadow-2xl border-4 border-white">
                 <div className="flex items-center justify-center py-2">
                   <Image
                     src="https://www.redconar.net/common/resources/images/logos/LogoHcolor01-72.png"
@@ -48,6 +48,21 @@ export default function TransparencySection() {
                     height={28}
                     className="object-contain brightness-0 invert"
                   />
+                </div>
+              </div>
+              
+              {/* Mobile: phone mockup debajo del browser mockup */}
+              <div className="md:hidden flex justify-center mt-4">
+                <div className="w-28 bg-gray-900 rounded-2xl p-3 shadow-xl border-4 border-white">
+                  <div className="flex items-center justify-center py-2">
+                    <Image
+                      src="https://www.redconar.net/common/resources/images/logos/LogoHcolor01-72.png"
+                      alt="Red Conar Logo"
+                      width={70}
+                      height={24}
+                      className="object-contain brightness-0 invert"
+                    />
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -59,8 +74,8 @@ export default function TransparencySection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3 block">
-                PORTAL DIGITAL / RED CONAR
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+                Portal Digital / Red Conar
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Toda la información,<br />
@@ -72,7 +87,7 @@ export default function TransparencySection() {
 
               <ul className="space-y-4">
                 <li className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center shadow-lg shadow-emerald-500/20">
                     <IconClock className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -81,7 +96,7 @@ export default function TransparencySection() {
                   </div>
                 </li>
                 <li className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center shadow-lg shadow-emerald-500/20">
                     <IconShieldCheck className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -90,7 +105,7 @@ export default function TransparencySection() {
                   </div>
                 </li>
                 <li className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center shadow-lg shadow-emerald-500/20">
                     <IconDeviceMobile className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -104,7 +119,7 @@ export default function TransparencySection() {
                 href="https://www.redconar.net"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-8 px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors"
+                className="inline-flex items-center gap-2 mt-8 px-6 py-3 bg-emerald-600 text-white font-medium rounded-lg hover:bg-emerald-700 transition-colors shadow-lg shadow-emerald-600/25"
               >
                 Ingresar al portal
               </a>

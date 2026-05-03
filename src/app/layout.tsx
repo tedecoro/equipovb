@@ -45,12 +45,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="light scroll-smooth" dir="ltr">
+    <html lang="es" className="light scroll-smooth overflow-x-hidden" dir="ltr">
       <body
-        className={` ${manrope.variable} font-manrope text-base text-slate-900 dark:text-white dark:bg-slate-900`}
+        className={`${manrope.variable} font-manrope text-base text-slate-900 dark:text-white dark:bg-slate-900 overflow-x-hidden w-full`}
       >
-        {children}
-        <WhatsappBtn/>
+        <div className="overflow-x-hidden w-full">
+          {children}
+          <WhatsappBtn/>
+        </div>
       </body>
     </html>
   );

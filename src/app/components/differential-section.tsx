@@ -40,7 +40,7 @@ export default function DifferentialSection() {
               key={index}
               className="flex flex-col items-center text-center"
             >
-              <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4 text-gray-700">
+              <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4 text-emerald-600">
                 {item.icon}
               </div>
               <h3 className="text-base font-semibold text-gray-900 mb-1">{item.title}</h3>

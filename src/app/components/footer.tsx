@@ -13,9 +13,9 @@ export default function Footer() {
       {/* Decorative gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40"></div>
       
-      <div className="container px-4 relative z-10">
+      <div className="container relative flex flex-wrap items-center justify-between">
         {/* Main Footer Content */}
-        <div className="py-16 border-b border-gray-800">
+        <div className="w-full py-16 border-b border-gray-800">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {/* Brand Column */}
             <motion.div 
@@ -25,7 +25,7 @@ export default function Footer() {
               transition={{ duration: 0.6 }}
               className="space-y-4"
             >
-              <h3 className="text-3xl font-bold text-white tracking-tight">Equipo VB</h3>
+              <h3 className="text-3xl font-bold text-emerald-400 tracking-tight">Equipo VB</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Administración profesional de consorcios y propiedades. 
                 Matrícula habilitada en CABA y Provincia de Buenos Aires.
@@ -37,7 +37,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -3 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-green-600 transition-colors duration-300"
+                  className="w-10 h-10 bg-emerald-500/20 rounded-lg flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all duration-300"
                 >
                   <IconBrandWhatsapp className="w-5 h-5" />
                 </motion.a>
@@ -45,7 +45,7 @@ export default function Footer() {
                   href="tel:+5491140487780"
                   whileHover={{ scale: 1.1, y: -3 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-gray-700 transition-colors duration-300"
+                  className="w-10 h-10 bg-emerald-500/20 rounded-lg flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all duration-300"
                 >
                   <IconPhone className="w-5 h-5" />
                 </motion.a>
@@ -53,7 +53,7 @@ export default function Footer() {
                   href="mailto:info@equipovb.com.ar"
                   whileHover={{ scale: 1.1, y: -3 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-gray-700 transition-colors duration-300"
+                  className="w-10 h-10 bg-emerald-500/20 rounded-lg flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all duration-300"
                 >
                   <IconMail className="w-5 h-5" />
                 </motion.a>
@@ -68,7 +68,7 @@ export default function Footer() {
               transition={{ delay: 0.1, duration: 0.6 }}
               className="space-y-4"
             >
-              <h4 className="text-lg font-semibold text-white mb-4">Navegación</h4>
+              <h4 className="text-lg font-semibold text-emerald-400 mb-4">Navegación</h4>
               <ul className="space-y-3">
                 {[
                   { name: 'Inicio', href: '#hero' },
@@ -81,9 +81,9 @@ export default function Footer() {
                     <motion.a
                       href={link.href}
                       whileHover={{ x: 5 }}
-                      className="text-gray-400 hover:text-white transition-colors duration-300 text-sm flex items-center gap-2"
+                      className="text-gray-400 hover:text-emerald-400 transition-colors duration-300 text-sm flex items-center gap-2"
                     >
-                      <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-white transition-colors"></span>
+                      <span className="w-1 h-1 bg-emerald-500/50 rounded-full group-hover:bg-emerald-400 transition-colors"></span>
                       {link.name}
                     </motion.a>
                   </motion.li>
@@ -99,7 +99,7 @@ export default function Footer() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="space-y-4"
             >
-              <h4 className="text-lg font-semibold text-white mb-4">Servicios</h4>
+              <h4 className="text-lg font-semibold text-emerald-400 mb-4">Servicios</h4>
               <ul className="space-y-3">
                 {[
                   'Administración de consorcios',
@@ -111,7 +111,7 @@ export default function Footer() {
                   <motion.li key={index}>
                     <motion.span 
                       whileHover={{ x: 5 }}
-                      className="text-gray-400 hover:text-white transition-colors duration-300 text-sm block cursor-pointer"
+                      className="text-gray-400 hover:text-emerald-400 transition-colors duration-300 text-sm block cursor-pointer"
                     >
                       {service}
                     </motion.span>
@@ -128,13 +128,13 @@ export default function Footer() {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="space-y-4"
             >
-              <h4 className="text-lg font-semibold text-white mb-4">Contacto</h4>
+              <h4 className="text-lg font-semibold text-emerald-400 mb-4">Contacto</h4>
               <ul className="space-y-4">
                 <motion.li 
                   whileHover={{ x: 5 }}
-                  className="flex items-start gap-3 m-0 text-gray-400 text-sm"
+                  className="flex items-start gap-3 m-0 text-gray-400 hover:text-emerald-400 transition-colors text-sm"
                 >
-                  <IconPhone className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                  <IconPhone className="w-5 h-5 flex-shrink-0 mt-0.5 text-emerald-400" />
                   <div>
                     <p className="text-white font-medium">+54 9 11 4048-7780</p>
                     <p className="text-xs text-gray-500">Atención 24/7</p>
@@ -142,9 +142,9 @@ export default function Footer() {
                 </motion.li>
                 <motion.li 
                   whileHover={{ x: 5 }}
-                  className="flex items-start gap-3 m-0 text-gray-400 text-sm"
+                  className="flex items-start gap-3 m-0 text-gray-400 hover:text-emerald-400 transition-colors text-sm"
                 >
-                  <IconMapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                  <IconMapPin className="w-5 h-5 flex-shrink-0 mt-0.5 text-emerald-400" />
                   <div>
                     <p className="text-white font-medium">CABA y PBA</p>
                     <p className="text-xs text-gray-500">4 sedes disponibles</p>
@@ -152,9 +152,9 @@ export default function Footer() {
                 </motion.li>
                 <motion.li 
                   whileHover={{ x: 5 }}
-                  className="flex items-start gap-3 m-0 text-gray-400 text-sm"
+                  className="flex items-start gap-3 m-0 text-gray-400 hover:text-emerald-400 transition-colors text-sm"
                 >
-                  <IconBuilding className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                  <IconBuilding className="w-5 h-5 flex-shrink-0 mt-0.5 text-emerald-400" />
                   <div>
                     <p className="text-white font-medium">Matrícula Habilitada</p>
                     <p className="text-xs text-gray-500">Profesional certificado</p>
@@ -166,8 +166,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="w-full py-6">
+          <div className="flex flex-col items-center justify-center gap-4 text-center">
             <motion.p 
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -184,11 +184,11 @@ export default function Footer() {
               className="flex items-center gap-6 text-sm text-gray-500"
             >
               <span className="flex items-center gap-2">
-                <IconShield className="w-4 h-4" />
+                <IconShield className="w-4 h-4 text-emerald-400" />
                 Matrícula habilitada
               </span>
               <span className="flex items-center gap-2">
-                <IconClock className="w-4 h-4" />
+                <IconClock className="w-4 h-4 text-emerald-400" />
                 Atención 24/7
               </span>
             </motion.div>
@@ -200,7 +200,7 @@ export default function Footer() {
               onClick={scrollToTop}
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.95 }}
-              className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300"
+              className="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all duration-300"
             >
               <IconArrowUp className="w-5 h-5" />
             </motion.button>
