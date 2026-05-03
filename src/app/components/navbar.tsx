@@ -7,8 +7,8 @@ import Link from 'next/link'
 const navItems = [
   { name: 'Inicio', to: 'home', number: '01' },
   { name: 'Servicios', to: 'servicios', number: '02' },
-  { name: 'Cómo Trabajamos', to: 'como-trabajamos', number: '03' },
-  { name: 'Presupuesto', to: 'presupuesto', number: '04' },
+  { name: 'Nosotros', to: 'nosotros', number: '03' },
+  { name: 'Cómo Trabajamos', to: 'como-trabajamos', number: '04' },
   { name: 'Contacto', to: 'contacto', number: '05' },
 ]
 
@@ -79,7 +79,7 @@ export default function Navbar({navLight, playBtn, bgLight, navCenter} : {navLig
                             href="#presupuesto" 
                             className="inline-flex h-10 px-6 text-xs tracking-wider items-center justify-center font-semibold rounded-full uppercase bg-emerald-600 text-white hover:bg-emerald-700 transition-all duration-300 shadow-lg shadow-emerald-600/25"
                         >
-                            Presupuesto
+                            Contactar!
                         </Link>
                     </div>
 

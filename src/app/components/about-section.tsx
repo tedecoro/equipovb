@@ -17,20 +17,21 @@ export default function AboutSection() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
+            
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3 block">
+              <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-semibold uppercase tracking-wider rounded-full mb-4">
                 SOBRE NOSOTROS
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Más que administración,<br />
                 somos aliados.
               </h2>
-              <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+              <p className="text-gray-600 mb-6 leading-relaxed text-lg">
                 En Equipo VB combinamos experiencia, compromiso y tecnología para brindarle una gestión integral eficiente y transparente.
               </p>
 

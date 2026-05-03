@@ -84,7 +84,7 @@ export default function Hero() {
               </div>
               <div className="text-left">
                 <div className="text-2xl font-bold text-white">+10</div>
-                <div className="text-xs text-gray-400">Años de experiencia</div>
+                <div className="text-xs text-gray-200">Años de experiencia</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -95,7 +95,7 @@ export default function Hero() {
               </div>
               <div className="text-left">
                 <div className="text-2xl font-bold text-white">98%</div>
-                <div className="text-xs text-gray-400">Clientes satisfechos</div>
+                <div className="text-xs text-gray-200">Clientes satisfechos</div>
               </div>
             </div>
           </motion.div>
