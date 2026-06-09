@@ -23,7 +23,7 @@ const locations = [
   },
   { 
     id: 'olivos',
-    address: 'Av. Maipú 355, Olivos, Vicente López', 
+    address: 'Av. Maipú 3525, Olivos, Vicente López', 
     type: 'sucursal',
     label: 'Olivos',
     embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.4389651078824!2d-58.4895!3d-34.5084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1b7b8c3d2a1%3A0x4f5f4e4b7b8c3d2a!2sAv.%20Maip%C3%BA%20355%2C%20Olivos!5e0!3m2!1ses!2sar!4v1704067200000',
